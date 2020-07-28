@@ -1,0 +1,101 @@
+/* ########### FlickGal ########### */
+
+.yourFlickgalWrap { margin: 50px 0; }
+
+.yourFlickgalWrap .item { width: 300px }
+.yourFlickgalWrap .moving {
+  -webkit-transition: -webkit-transform .5s ease-out;
+  -moz-transition: -moz-transform .5s ease-out;
+}
+
+.yourFlickgalWrap .containerInner {
+  overflow: hidden;
+}
+.yourFlickgalWrap .containerInner .item {
+  display: inline-block;
+  height: 465px;
+  text-align: center;
+  margin: 20px 30px 40px 30px;
+  background-color: #23203a;
+  color: #fff;
+  font-size: 14px;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 10px;
+  padding:30px 15px;
+  box-sizing: border-box;
+}
+
+.yourFlickgalWrap .containerInner .item .itemInfo {
+     margin-top: 15px;
+     padding: 0 10px;
+     overflow-y: scroll;
+     height: 200px;
+}
+
+.yourFlickgalWrap .containerInner .item p {
+   text-align: left;
+   word-break: break-all;
+
+}
+
+.yourFlickgalWrap .nav {
+  text-align: center;
+}
+
+.yourFlickgalWrap .nav ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.yourFlickgalWrap .nav li {
+  display: inline-block;
+}
+
+.yourFlickgalWrap .nav li a {
+  text-decoration: none;
+  color: #8a8a8d;
+  font-size: 220%;
+  -webkit-transition: all 0.4s ease; transition: all 0.4s ease; 
+}
+
+.yourFlickgalWrap .nav li a:hover {
+  color: #fff;
+}
+
+
+.yourFlickgalWrap .nav .selected a {
+  color: #fff;
+}
+.yourFlickgalWrap .arrows {
+  font-size: 180%;
+  padding: 0 40px;
+  -webkit-transition: all 0.4s ease; transition: all 0.4s ease;
+  animation: mymove 5s ; 
+}
+.yourFlickgalWrap .arrows a {
+  text-decoration: none;
+}
+.yourFlickgalWrap .arrows a:hover span{
+   padding-right: 25px;
+   animation: mymove 5s ;
+}
+.yourFlickgalWrap .arrows a:active {
+ 
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 10px;}
+}
+
+.yourFlickgalWrap .arrows a.off {
+  color: rgba(0,0,0,.2);
+  background: none;
+}
+.yourFlickgalWrap .arrows .prev {
+  float: left;
+}
+.yourFlickgalWrap .arrows .next {
+  float: right;
+}
